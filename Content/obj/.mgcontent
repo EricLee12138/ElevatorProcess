@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>MacOSX</Platform>
+  <Config />
+  <SourceFiles>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/Up.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/Stop.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/Down.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/GoUp.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/GoDown.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/Emergency.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/Elevator.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/09.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/08.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/07.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/06.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/05.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/04.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/03.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/02.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/01.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/00.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/Button09.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/Button08.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/Button07.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/Button06.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/Button05.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/Button04.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/Button03.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/Button02.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/Button01.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/Button00.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/Button10.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/10.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/ElevatorControlPanel.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/Open.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/Close.png</File>
+    <File>/Users/ericlee/OneDrive for Eric/OneDrive - isx8.galileogiftedschool.org/Projects/MonoGame/ElevatorProcess/ElevatorProcess/Content/Elevator_Open.png</File>
+  </SourceFiles>
+</SourceFileCollection>

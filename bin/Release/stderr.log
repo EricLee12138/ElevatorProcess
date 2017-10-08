@@ -1,0 +1,152 @@
+Stacktrace:
+
+  at <unknown> <0xffffffff>
+  at Microsoft.Xna.Framework.MacGamePlatform.InitializeMainWindow () [0x00000] in <22537961847f41f881e1a9d3cb0e99a8>:0
+  at Microsoft.Xna.Framework.MacGamePlatform..ctor (Microsoft.Xna.Framework.Game) [0x0003c] in <22537961847f41f881e1a9d3cb0e99a8>:0
+  at Microsoft.Xna.Framework.GamePlatform.PlatformCreate (Microsoft.Xna.Framework.Game) [0x00000] in <22537961847f41f881e1a9d3cb0e99a8>:0
+  at Microsoft.Xna.Framework.Game..ctor () [0x001fb] in <22537961847f41f881e1a9d3cb0e99a8>:0
+  at ElevatorProcess.Game1..ctor () [0x00033] in <c7fe1adc22c8414db77fc6477a611cf8>:0
+  at ElevatorProcess.AppDelegate.FinishedLaunching (MonoMac.Foundation.NSObject) [0x00000] in <c7fe1adc22c8414db77fc6477a611cf8>:0
+  at (wrapper dynamic-method) object.[ElevatorProcess.AppDelegate.Void FinishedLaunching(MonoMac.Foundation.NSObject)] (MonoMac.Foundation.NSObject,MonoMac.ObjCRuntime.Selector,MonoMac.Foundation.NSObject) [0x00010] in <b697cffb61b74023aa9c587e6c49beb3>:0
+  at (wrapper native-to-managed) object.[ElevatorProcess.AppDelegate.Void FinishedLaunching(MonoMac.Foundation.NSObject)] (MonoMac.Foundation.NSObject,MonoMac.ObjCRuntime.Selector,MonoMac.Foundation.NSObject) [0x0006e] in <b697cffb61b74023aa9c587e6c49beb3>:0
+  at <unknown> <0xffffffff>
+  at (wrapper managed-to-native) MonoMac.AppKit.NSApplication.NSApplicationMain (int,string[]) <0x00012>
+  at MonoMac.AppKit.NSApplication.Main (string[]) [0x0003d] in <7ebb5a7ffafc4ab7b0a685832e599ff7>:0
+  at ElevatorProcess.Program.Main (string[]) [0x0001a] in <c7fe1adc22c8414db77fc6477a611cf8>:0
+  at (wrapper runtime-invoke) <Module>.runtime_invoke_void_object (object,intptr,intptr,intptr) [0x0004e] in <c7fe1adc22c8414db77fc6477a611cf8>:0
+
+Native stacktrace:
+
+	0   libmono-2.0.dylib                   0x004ccdf4 mono_handle_native_crash + 324
+	1   libmono-2.0.dylib                   0x0052cc13 sigabrt_signal_handler + 147
+	2   libsystem_platform.dylib            0xa1733e5b _sigtramp + 43
+	3   ???                                 0xffffffff 0x0 + 4294967295
+	4   libsystem_c.dylib                   0xa15b9a34 abort + 141
+	5   libmono-2.0.dylib                   0x006ac9ec mono_log_write_logfile + 380
+	6   libmono-2.0.dylib                   0x006a7252 structured_log_adapter + 50
+	7   libmono-2.0.dylib                   0x006c58ea monoeg_g_log + 106
+	8   libmono-2.0.dylib                   0x004e2516 mono_class_is_magic_float + 358
+	9   libmono-2.0.dylib                   0x004e160c mono_emit_native_types_intrinsics + 220
+	10  libmono-2.0.dylib                   0x0045d435 mini_emit_inst_for_method + 20501
+	11  libmono-2.0.dylib                   0x0044b8e9 mono_method_to_ir + 191529
+	12  libmono-2.0.dylib                   0x00407788 mini_method_compile + 4344
+	13  libmono-2.0.dylib                   0x0040b3f3 mono_jit_compile_method_inner + 723
+	14  libmono-2.0.dylib                   0x0040e8a1 mono_jit_compile_method_with_opt + 753
+	15  libmono-2.0.dylib                   0x0040e5a2 mono_jit_compile_method + 50
+	16  libmono-2.0.dylib                   0x004cf491 common_call_trampoline + 1105
+	17  libmono-2.0.dylib                   0x004cf00a mono_magic_trampoline + 74
+	18  ???                                 0x000d6188 0x0 + 876936
+
+Debug info from gdb:
+
+(lldb) command source -s 0 '/tmp/mono-gdb-commands.KctRB6'
+Executing commands in '/tmp/mono-gdb-commands.KctRB6'.
+(lldb) process attach --pid 9861
+Process 9861 stopped
+* thread #1, name = 'tid_403', queue = 'com.apple.main-thread', stop reason = signal SIGSTOP
+    frame #0: 0xa1659c4a libsystem_kernel.dylib`__wait4 + 10
+libsystem_kernel.dylib`__wait4:
+->  0xa1659c4a <+10>: jae    0xa1659c5a                ; <+26>
+    0xa1659c4c <+12>: calll  0xa1659c51                ; <+17>
+    0xa1659c51 <+17>: popl   %edx
+    0xa1659c52 <+18>: movl   0x58d53d7(%edx), %edx
+
+Executable module set to "/Users/ericlee/EricLee/OneDrive - 5TB/Projects/MonoGame/ElevatorProcess/ElevatorProcess/bin/Release/ElevatorProcess.app/Contents/MacOS/ElevatorProcess".
+Architecture set to: i386-apple-macosx.
+(lldb) thread list
+Process 9861 stopped
+* thread #1: tid = 0x616ba, 0xa1659c4a libsystem_kernel.dylib`__wait4 + 10, name = 'tid_403', queue = 'com.apple.main-thread', stop reason = signal SIGSTOP
+  thread #2: tid = 0x616c9, 0xa165930e libsystem_kernel.dylib`__psynch_cvwait + 10, name = 'SGen worker'
+  thread #3: tid = 0x616ca, 0xa165195a libsystem_kernel.dylib`semaphore_wait_trap + 10, name = 'Finalizer'
+  thread #4: tid = 0x616cb, 0xa1659cba libsystem_kernel.dylib`__workq_kernreturn + 10
+  thread #5: tid = 0x616cc, 0xa1659cba libsystem_kernel.dylib`__workq_kernreturn + 10
+  thread #6: tid = 0x616cd, 0xa1659cba libsystem_kernel.dylib`__workq_kernreturn + 10
+  thread #7: tid = 0x616ce, 0xa1659cba libsystem_kernel.dylib`__workq_kernreturn + 10
+  thread #8: tid = 0x616fa, 0xa1659cba libsystem_kernel.dylib`__workq_kernreturn + 10
+  thread #9: tid = 0x61708, 0xa1651972 libsystem_kernel.dylib`semaphore_timedwait_trap + 10
+  thread #10: tid = 0x61711, 0xa165191e libsystem_kernel.dylib`mach_msg_trap + 10, name = 'com.apple.audio.IOThread.client'
+(lldb) thread backtrace all
+* thread #1, name = 'tid_403', queue = 'com.apple.main-thread', stop reason = signal SIGSTOP
+  * frame #0: 0xa1659c4a libsystem_kernel.dylib`__wait4 + 10
+    frame #1: 0xa15d82ef libsystem_c.dylib`waitpid$UNIX2003 + 32
+    frame #2: 0x004ccec7 libmono-2.0.dylib`mono_handle_native_crash(signal=<unavailable>, ctx=0xbfffce8c, info=0xbfffce4c) at mini-exceptions.c:2567 [opt]
+    frame #3: 0x0052cc13 libmono-2.0.dylib`sigabrt_signal_handler(_dummy=<unavailable>, _info=<unavailable>, context=<unavailable>) at mini-posix.c:208 [opt]
+    frame #4: 0xa1733e5b libsystem_platform.dylib`_sigtramp + 43
+
+  thread #2, name = 'SGen worker'
+    frame #0: 0xa165930e libsystem_kernel.dylib`__psynch_cvwait + 10
+    frame #1: 0xa173deb0 libsystem_pthread.dylib`_pthread_cond_wait + 647
+    frame #2: 0xa173f844 libsystem_pthread.dylib`pthread_cond_wait$UNIX2003 + 51
+    frame #3: 0x006a3341 libmono-2.0.dylib`thread_func [inlined] mono_os_cond_wait(mutex=0x00799564) at mono-os-mutex.h:146 [opt]
+    frame #4: 0x006a332f libmono-2.0.dylib`thread_func(thread_data=0x00000000) at sgen-thread-pool.c:129 [opt]
+    frame #5: 0xa173d047 libsystem_pthread.dylib`_pthread_body + 184
+    frame #6: 0xa173cf8f libsystem_pthread.dylib`_pthread_start + 243
+    frame #7: 0xa173c84a libsystem_pthread.dylib`thread_start + 34
+
+  thread #3, name = 'Finalizer'
+    frame #0: 0xa165195a libsystem_kernel.dylib`semaphore_wait_trap + 10
+    frame #1: 0x00622d16 libmono-2.0.dylib`finalizer_thread [inlined] mono_os_sem_wait(flags=MONO_SEM_FLAGS_ALERTABLE) at mono-os-semaphore.h:90 [opt]
+    frame #2: 0x00622d08 libmono-2.0.dylib`finalizer_thread [inlined] mono_coop_sem_wait(flags=MONO_SEM_FLAGS_ALERTABLE) at mono-coop-semaphore.h:40 [opt]
+    frame #3: 0x00622cfe libmono-2.0.dylib`finalizer_thread(unused=0x00000000) at gc.c:907 [opt]
+    frame #4: 0x005f3084 libmono-2.0.dylib`start_wrapper [inlined] start_wrapper_internal at threads.c:837 [opt]
+    frame #5: 0x005f2f42 libmono-2.0.dylib`start_wrapper(data=<unavailable>) at threads.c:889 [opt]
+    frame #6: 0x006ba690 libmono-2.0.dylib`inner_start_thread(data=<unavailable>) at mono-threads.c:1170 [opt]
+    frame #7: 0xa173d047 libsystem_pthread.dylib`_pthread_body + 184
+    frame #8: 0xa173cf8f libsystem_pthread.dylib`_pthread_start + 243
+    frame #9: 0xa173c84a libsystem_pthread.dylib`thread_start + 34
+
+  thread #4
+    frame #0: 0xa1659cba libsystem_kernel.dylib`__workq_kernreturn + 10
+    frame #1: 0xa173cb95 libsystem_pthread.dylib`_pthread_wqthread + 841
+    frame #2: 0xa173c826 libsystem_pthread.dylib`start_wqthread + 34
+
+  thread #5
+    frame #0: 0xa1659cba libsystem_kernel.dylib`__workq_kernreturn + 10
+    frame #1: 0xa173cd06 libsystem_pthread.dylib`_pthread_wqthread + 1210
+    frame #2: 0xa173c826 libsystem_pthread.dylib`start_wqthread + 34
+
+  thread #6
+    frame #0: 0xa1659cba libsystem_kernel.dylib`__workq_kernreturn + 10
+    frame #1: 0xa173cd06 libsystem_pthread.dylib`_pthread_wqthread + 1210
+    frame #2: 0xa173c826 libsystem_pthread.dylib`start_wqthread + 34
+
+  thread #7
+    frame #0: 0xa1659cba libsystem_kernel.dylib`__workq_kernreturn + 10
+    frame #1: 0xa173cb95 libsystem_pthread.dylib`_pthread_wqthread + 841
+    frame #2: 0xa173c826 libsystem_pthread.dylib`start_wqthread + 34
+
+  thread #8
+    frame #0: 0xa1659cba libsystem_kernel.dylib`__workq_kernreturn + 10
+
+  thread #9
+    frame #0: 0xa1651972 libsystem_kernel.dylib`semaphore_timedwait_trap + 10
+    frame #1: 0xa1510ca8 libdispatch.dylib`_os_semaphore_timedwait + 95
+    frame #2: 0xa1500eb1 libdispatch.dylib`_dispatch_semaphore_wait_slow + 76
+    frame #3: 0xa1500e5c libdispatch.dylib`dispatch_semaphore_wait + 35
+    frame #4: 0xa14fb790 libdispatch.dylib`_dispatch_worker_thread + 238
+    frame #5: 0xa173d047 libsystem_pthread.dylib`_pthread_body + 184
+    frame #6: 0xa173cf8f libsystem_pthread.dylib`_pthread_start + 243
+    frame #7: 0xa173c84a libsystem_pthread.dylib`thread_start + 34
+
+  thread #10, name = 'com.apple.audio.IOThread.client'
+    frame #0: 0xa165191e libsystem_kernel.dylib`mach_msg_trap + 10
+    frame #1: 0xa1650e93 libsystem_kernel.dylib`mach_msg + 51
+    frame #2: 0x93e8251c CoreAudio`HALB_MachPort::SendMessageWithReply(unsigned int, unsigned int, unsigned long, unsigned long, mach_msg_header_t*, bool, unsigned int) + 130
+    frame #3: 0x93e5cc7d CoreAudio`HALB_MachPort::SendSimpleMessageWithSimpleReply(unsigned int, unsigned int, int, int&, bool, unsigned int) + 49
+    frame #4: 0x93e596d8 CoreAudio`HALC_ProxyIOContext::IOWorkLoop() + 1730
+    frame #5: 0x93e58dc4 CoreAudio`HALC_ProxyIOContext::IOThreadEntry(void*) + 236
+    frame #6: 0x93e89813 CoreAudio`___ZN19HALC_ProxyIOContextC2Emj_block_invoke + 20
+    frame #7: 0x93e58c97 CoreAudio`HALB_IOThread::Entry(void*) + 71
+    frame #8: 0xa173d047 libsystem_pthread.dylib`_pthread_body + 184
+    frame #9: 0xa173cf8f libsystem_pthread.dylib`_pthread_start + 243
+    frame #10: 0xa173c84a libsystem_pthread.dylib`thread_start + 34
+(lldb) detach
+
+=================================================================
+Got a SIGABRT while executing native code. This usually indicates
+a fatal error in the mono runtime or one of the native libraries 
+used by your application.
+=================================================================
+
+Process 9861 detached
+(lldb) quit
